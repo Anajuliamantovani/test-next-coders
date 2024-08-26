@@ -1,57 +1,74 @@
-# Desafio Técnico - Aplicação de Gerenciamento de Tarefas
+# <h1 align="center">Gerenciador de Tarefas 🗃
+<p align="center"> O Gerenciado de Tarefas é uma aplicação desenvolvida em ASP.NET Core com o intuito de organizar as tarefas pessoais do nosso dia a dia.
+<h2>Guia de usuário</h2>
+<h3>Instalação</h3>
 
-### Contexto do Desafio:
-Você foi contratado para desenvolver uma aplicação de gerenciamento de tarefas para uma empresa. O sistema deve permitir que os usuários criem, editem e excluam tarefas. Além disso, o sistema deve exibir uma lista de tarefas filtráveis por status (Concluída, Pendente).
+Abra o repositorio - [Gerenciador de Tarefas](https://github.com/Anajuliamantovani/test-next-coders.git)
 
-### Requisitos:
+Baixe os 3 arquivos : 
 
-#### 1. Backend (.NET)
-Desenvolver uma API RESTful usando ASP.NET Core que:
+* **.NET 8**
 
-- Permita criar, ler, atualizar e excluir (CRUD) tarefas.
-- Tenha rotas para filtrar as tarefas por status (Concluída, Pendente).
-- Valide as entradas (e.g., campos obrigatórios).
-- Utilize Entity Framework Core ou Dapper para se conectar a um banco de dados SQL.
+* **MySQL**
 
-**Modelo de Tarefa:**
+* **Visual Studio/VSCode**
 
-- **ID** (int, chave primária)
-- **Título** (string, obrigatório)
-- **Descrição** (string)
-- **Status** (enum: Pendente, Concluída)
-- **Data de Criação** (DateTime)
-- **Data de Conclusão** (DateTime?)
+<h2>Guia de usuário</h2>
 
-#### 2. Banco de Dados (SQL)
-- Criar um banco de dados SQL para armazenar as tarefas.
-- As tabelas podem ser criadas usando migrations do Entity Framework.
-- Deve conter alguns dados pré-populados (seed) para testes.
+* **Clone o Repositório usando o comando abaixo**
 
-#### 3. Frontend (React) **(Opcional)**
-Criar uma aplicação simples em React que:
+  ```bash
+   git clone https://github.com/Anajuliamantovani/test-next-coders.git
+   cd test-next-coders
 
-- Liste as tarefas na tela inicial.
-- Tenha um formulário para criar uma nova tarefa.
-- Permita editar e excluir tarefas.
-- Permita filtrar as tarefas por status.
-- Use chamadas à API para realizar as operações de CRUD.
+* **Banco de dados MySQL**
+
+  Crie um Banco de dados MySQL e configure a conexão no arquivo `appsettings.json`:
+
+  ```json
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Database=todo_list;User=root;Password=sua-senha;"
+    }
   
-Utilize React Hooks e, se necessário, algum state management como Context API.
+<h2>Executando a API</h2>
 
-#### 4. Extras (Diferenciais):
-- Front-end
-- Implementação de autenticação.
-- Autenticação.
-- Testes unitários para o backend.
-- Deploy da aplicação em um ambiente cloud (Azure, AWS, Heroku, etc.).
+1. Certifique-se de que você está na pasta onde salvou/clonou o repositório
+2. Abra o powershell e aplique o comando
+   ```powershell
+   dotnet watch
+   ```
+   
+<h2>Testando</h2>
 
-### Entrega:
+Logo após o comando dotnet watch, essa imagem aparecerá
 
-- Faça um **fork** deste repositório e implemente sua solução.
-- Após finalizar, envie o link do repositório com sua solução.
-- Incluir um arquivo **README** com instruções de configuração e execução da aplicação.
+![image](https://github.com/user-attachments/assets/cc32ee78-3e53-48fa-8448-68f9fad39df5)
 
-### Critérios de Avaliação:
-- Organização do código e boas práticas.
-- Clareza e objetividade nas implementações.
-- Uso adequado do banco de dados.
+**Na sessão de Users você deverá primeiro criar um novo usuário, adicionando o nome e o e-mail**
+
+![image](https://github.com/user-attachments/assets/8e0a8fc0-5a12-4a6d-93fb-93badb87c70b)
+
+**Após isso, ele irá gerar um Id, e com esse Id você irá usar para adicionar uma tarefa atrelada ao usuário criado.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
