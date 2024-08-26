@@ -48,7 +48,18 @@ Logo após o comando dotnet watch, essa imagem aparecerá
 
 ![image](https://github.com/user-attachments/assets/8e0a8fc0-5a12-4a6d-93fb-93badb87c70b)
 
-**Após isso, ele irá gerar um Id, e com esse Id você irá usar para adicionar uma tarefa atrelada ao usuário criado.**
+**Após isso, ele irá gerar um Id, e com esse Id você irá usar para adicionar uma tarefa atrelada ao usuário criado, juntamente adicionando que a tarefa esta Pendente.**
+
+![image](https://github.com/user-attachments/assets/bddb904c-ce4c-46a9-a068-19bd19cdd6e0)
+
+**É possivel depois editar a tarefa, seja o titulo, descrição ou até mesmo modificar o status**
+
+![image](https://github.com/user-attachments/assets/7cef68e2-7f76-487f-8dc7-bec9271a4555)
+
+**Para deletar a tarefa basta adicionar o Id da tarefa gerada no banco de dados e exucutar que ela será deletada automaticamente**
+
+![image](https://github.com/user-attachments/assets/34a1aff1-d815-430f-bd99-7f4de82d61ef)
+
 
 
 
