@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Models.HttpResponse;
+//using Models.HttpResponse;
 using Models.HttpRequest;
 using Contexts;
 using Models;
@@ -20,8 +20,7 @@ namespace Controllers
         }
 
         [HttpPost("CreateUser")]
-
-        public async Task<IActionResult> CreateUser([FromBody] UserRequest userRequest)
+        public async Task <IActionResult> CreateUser([FromBody] UserRequest userRequest)
         {
             try
             {

@@ -1,5 +1,5 @@
-namespace Models.HttpResponse
-{
+//namespace Models.HttpResponse
+
     public class TasksResponse
     {
         public required long Id {get; set;}
@@ -9,4 +9,3 @@ namespace Models.HttpResponse
         public DateTime? ConclusionDate {get; set;}
         public string Status {get; set;}
     }
-}
